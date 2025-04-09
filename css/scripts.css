@@ -2,7 +2,9 @@
 
     font-size: 14px;
     --principalcolor: #0f6dfa;
-    --secondcolor: rgb(230, 227, 32);
+    --secondcolor: rgb(38, 241, 214);
+    --thirdcolor: #0a0afe;
+    --titlecolor: rgb(87, 85, 85);
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -21,7 +23,7 @@ body {
 
 header {
     padding: 20px;
-    background-color: blue;
+    background-color: var(--thirdcolor);
 }
 
 #titre {
@@ -29,12 +31,14 @@ header {
         font-size: 3rem;
         font-weight: bold;
         color: var(--principalcolor);
-        
+
     }
-    p{
+
+    p {
         font-size: 1.8rem;
         text-align: center;
-        color: var(--principalcolor);
+        color: var(--thirdcolor);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 }
 
@@ -52,19 +56,42 @@ main {
 
     margin: 10px;
 
-    h1 {
+}
+
+#presentation {
+    h2 {
+        color: var(--principalcolor) !important;
         text-align: center;
-        font-size: 2rem;
-        margin: 20px;
+        font-size: 1.8rem !important;
+        padding-bottom: 10px;
+    }
+
+    p {
         font-weight: bold;
+        color: var(--titlecolor);
+        text-align: center;
     }
 }
+
+
 
 .row {
     align-items: center;
 }
 
 
+
+/* Page des fonctionnnalités  */
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--principalcolor);
+    padding: 2rem;
+    margin: 1rem;
+
+}
 
 
 img {
@@ -78,20 +105,22 @@ img {
     grid-template-columns: 1fr;
     gap: 20px;
     margin-top: 1rem;
+
+    h2 {
+        color: rgb(87, 85, 85) !important;
+        text-align: start;
+        font-size: 1.8rem !important;
+        padding-bottom: 10px;
+    }
+
 }
+
 
 
 section {
     padding: 1rem;
 
 
-    h2 {
-        font-weight: bold;
-        color: var(--principalcolor);
-        text-align: center;
-        font-size: 18px;
-        padding-bottom: 10px;
-    }
 
 }
 
@@ -155,14 +184,14 @@ article ul {
 
 
 .btn {
-    background-color: var(--principalcolor);
+    background-color: var(--thirdcolor);
     color: white;
 }
 
 
 footer {
     text-align: center;
-    background-color: var(--principalcolor);
+    background-color: var(--thirdcolor);
     color: white;
     padding: 10px;
 
@@ -193,7 +222,7 @@ footer {
 }
 
 /* Media queries pour les tablettes */
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
     section {
         h2 {
@@ -211,7 +240,11 @@ footer {
 
 
     #vad {
-        height: 15rem;
+        height:20rem;
+        align-content: center;
+        h3 {
+            font-size: 1.9rem;
+        }
     }
 }
 
