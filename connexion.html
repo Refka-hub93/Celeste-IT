@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/scripts.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/connexion.js" defer></script>
 </head>
 
 <body>
@@ -53,44 +54,50 @@
     <main>
 
 
-        <section class="formulaire container py-5">
-            
-            <form action="" method="post" class="row g-4">
+        <section class="formulaire container py-5" id="connexion">
+
+            <form action="" method="post" class="row g-4" id="loginForm">
                 <h2 class="text-center mb-4"> Se connecter</h2>
                 <!-- Champ Email -->
                 <div class="col-12">
                     <label for="email" class="form-label">Email :</label>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="Entrez votre email" required>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Entrez votre email"
+                        required>
+                    <small class="text-danger" id="emailError"></small>
                 </div>
-        
+
                 <!-- Champ Mot de passe -->
                 <div class="col-12">
                     <label for="pass" class="form-label">Mot de passe :</label>
-                    <input type="password" id="pass" name="pass" class="form-control" placeholder="Entrez votre mot de passe" required>
+                    <input type="password" id="pass" name="pass" class="form-control"
+                        placeholder="Entrez votre mot de passe" required>
+                    <div class="error" id="passError"></div>
+
+                    <small class="text-danger" id="passError"></small>
                 </div>
-        
+
                 <!-- Bouton -->
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary px-4 py-2">Se connecter</button>
                 </div>
-        
             </form>
         </section>
-        
-                
-        
+
 
         <!-- Section Accroche -->
-<section class="accroche">
-    <h2>🚀 Rejoignez la communauté Céleste IT</h2>
-    <p>Accédez à votre espace personnel et gérez vos projets en toute simplicité.</p>
-    <ul>
-        <li>✔ Suivi en temps réel de vos tâches</li>
-        <li>✔ Collaboration fluide avec votre équipe</li>
-        <li>✔ Notifications et rappels intelligents</li>
-    </ul>
-    <p>Pas encore de compte ? <a href="nouveaucompte.html">Créez-en un maintenant</a> et boostez votre productivité !</p>
-</section>
+        <section id="secondaire">
+            <div>
+            <h2>🚀 Rejoignez la communauté Céleste IT</h2>
+            <p>Accédez à votre espace personnel et gérez vos projets en toute simplicité.</p>
+            <ul>
+                <li>✔ Suivi en temps réel de vos tâches</li>
+                <li>✔ Collaboration fluide avec votre équipe</li>
+                <li>✔ Notifications et rappels intelligents</li>
+            </ul>
+            <p>Pas encore de compte ? <a href="nouveaucompte.html">Créez-en un maintenant</a> et boostez votre
+                productivité !</p>
+            </div>
+        </section>
 
     </main>
     <footer>
@@ -102,7 +109,7 @@
             <li>CGV</li>
             <li>Contact</li>
         </ul>
-        <p id="copy"> © 2025 Céleste-It - Tous droit résevés</p>
+        <p id="copy"> © 2025 Céleste-It - Tous droits résevés</p>
     </footer>
 </body>
 

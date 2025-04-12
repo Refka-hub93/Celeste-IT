@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="css/scripts.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="javascript/contact.js" defer ></script>
 </head>
 
 <body>
@@ -51,48 +53,62 @@
     </header>
 
     <main>
-
-
-            <section class="formulaire container py-4">
+                <section class="formulaire container py-4">
+                    <form id="contactForm" action="" method="post">
+                        <h2 class="text-center mb-4"> Formulaire de contact</h2>
+                        
+                        <!-- Nom -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom :</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <small id="nameError" class="text-danger"></small>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email :</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <small id="emailError" class="text-danger"></small>
+                        </div>
+                        
+                        <!-- Message -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message :</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Écrivez votre texte ici..." rows="4" required></textarea>
+                            <small id="messageError" class="text-danger"></small>
+                        </div>
+                        
+                        <!-- RGPD -->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rgpd" name="accept_terms" required>
+                            <label for="rgpd" class="form-check-label">
+                                J'accepte la collecte de mes données et les <a href="conditions.html">conditions générales</a>
+                            </label>
+                            <small id="rgpdError" class="text-danger"></small>
+                        </div>
+                        
+                        <!-- Bouton -->
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary px-4 py-2">Se connecter</button>
+        </div>
+                    </form>
+                </section>
                 
-                <form action="" method="post">
-                    <h2 class="text-center mb-4">Contact</h2>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nom :</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                    </div>
-            
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email :</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
-            
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message :</label>
-                        <textarea id="message" name="message" class="form-control" placeholder="Écrivez votre texte ici..." rows="4" required></textarea>
-                    </div>
-            
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="rgpd" name="accept_terms" required>
-                        <label for="rgpd" class="form-check-label">
-                            J'accepte la collecte de mes données et les <a href="conditions.html">conditions générales</a>
-                        </label>
-                    </div>
-            
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
-                </form>
-            </section>
+           
 
-        </section>
 
         <!-- Section Coordonnées -->
-        <section>
+        <section id="secondaire" >
+            <div>
             <h2>📍 Nos coordonnées</h2>
-            <p><strong>Céleste IT</strong></p>
-            <p>🏢 Adresse : 42 Avenue du Numérique, 75000 Paris, France</p>
-            <p>📞 Téléphone : +33 1 23 45 67 89</p>
-            <p>📧 Email : contact@celeste-it.com</p>
+            <ul>
+                <li class="m-3"><strong>Céleste IT</strong></li>
+                <li>🏢 Adresse : 42 Avenue du Numérique, 75000 Paris, France</li>
+                <li>📞 Téléphone : +33 1 23 45 67 89</li>
+                <li>📧 Email : contact@celeste-it.com</li>
 
+            </ul>
+        </div>
         </section>
 
     </main>
@@ -105,7 +121,7 @@
             <li>CGV</li>
             <li>Contact</li>
         </ul>
-        <p id="copy"> © 2025 Céleste-It - Tous droit résevés</p>
+        <p id="copy"> © 2025 Céleste-It - Tous droits résevés</p>
     </footer>
 </body>
 

@@ -114,15 +114,9 @@ h1 {
 
 }
 
-
-
 section {
     padding: 1rem;
-
-
-
 }
-
 
 
 article {
@@ -178,10 +172,6 @@ article ul {
     list-style: none;
 }
 
-
-
-
-
 .btn {
     background-color: var(--thirdcolor);
     color: white;
@@ -232,6 +222,15 @@ form {
 
 }
 
+#secondaire {
+    ul {
+        list-style: none;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
 /* Media queries pour les tablettes */
 @media (min-width: 768px) {
 
@@ -250,6 +249,8 @@ form {
     }
 
 
+
+
     #vad {
         height: 20rem;
         align-content: center;
@@ -260,6 +261,7 @@ form {
     }
 }
 
+/* Media queries pour desktop */
 
 
 @media (min-width:1200px) {
@@ -306,5 +308,8 @@ form {
     a {
         list-style: none;
     }
+
+
+
 
 }
