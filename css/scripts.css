@@ -5,20 +5,20 @@
     --secondcolor: rgb(38, 241, 214);
     --thirdcolor: #0a0afe;
     --titlecolor: rgb(87, 85, 85);
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+    --font-color: rgb(9, 156, 241);
+
+
+    font-size: 16px;
+
 }
 
 body {
+
+
     img {
         width: 100%;
         object-fit: cover;
-        border-radius: 10px;
-        box-shadow: 10px;
+        border-radius: 5px;
         overflow: hidden;
         height: auto;
     }
@@ -28,23 +28,40 @@ body {
 
 header {
     padding: 20px;
-    background-color: var(--thirdcolor);
+    /* background: linear-gradient(to right, #1670f7, #7be2fe); */
+    background-image: url('../images/header.jpg'); /* Chemin de l'image */
+    background-size: cover; /* L'image couvre tout l'espace */
+    background-position: center; /* Centrer l'image */
+    
+
+    #titre {
+        display: grid;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        /* Hauteur de l'élément pour démonstration */
+        
+        
+        h1 {
+
+            font-size: 2.3rem;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+
+        p {
+            font-size: 1.8rem;
+            text-align: center;
+            color: white;
+        }
+    }
 }
 
-#titre {
-    h1 {
-        font-size: 2.3rem;
-        font-weight: bold;
-        color: var(--principalcolor);
-    }
-
-    p {
-        font-size: 1.8rem;
-        text-align: center;
-        color: var(--thirdcolor);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+main {
+    padding-top: 0;
+    margin-top: 0;
 }
+
 
 .navbar a {
     color: white;
@@ -226,6 +243,7 @@ form {
     ul {
         list-style: none;
     }
+
     h2 {
         font-size: 2rem;
     }
