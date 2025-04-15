@@ -30,7 +30,7 @@ formu.addEventListener('submit', (event) => {
 
     // Validation du mot de passe
     if (!/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()]).{6,}$/.test(passField.value)) {
-        passError.textContent = 'Le mot de passe doit contenir au moins 6 caractères, une majuscule, une minuscule, un chiffre et un caractère spécial (!@#$%^&*()).';
+        passError.textContent = 'Le mot de passe est incorrect';
         isValid = false;
     } else {
         passError.textContent = ''; // Pas d'erreur
