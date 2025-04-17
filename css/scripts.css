@@ -257,10 +257,6 @@ article ul {
 
 /* CSS du Tableau */
 
-.list-header {
-    background: linear-gradient(to right, #420a74, #061b92);
-}
-
 #add-list-button {
     padding: 0.5rem 1rem;
     background-color: var(--thirdcolor);
@@ -339,20 +335,54 @@ article ul {
 }
 
 
+/* 
+Modal */
 
 
+/* Styles de base pour masquer/afficher la modale */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Arrière-plan semi-transparent */
+    display: none; /* Par défaut, la modale est masquée */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.visible {
+    display: flex; /* Affiche la modale en mode flex */
+}
+
+/* Contenu de la modale */
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 70%; /* Prend 70% de la largeur */
+    max-width: 800px;
+    max-height: 90%; /* Limite la hauteur à 90% de l'écran */
+    overflow-y: auto; /* Ajoute un défilement si le contenu dépasse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Bouton pour fermer la modale */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
 
 
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
