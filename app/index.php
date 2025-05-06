@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page d'accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/scripts.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <header class="hero">
+ 
+        <div id="logonav">
+            <a href="index.html"><img src="./images/logo final.png" alt="logo celest-it"></a>
+
+            <!-- Liste classique visible en écran large -->
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                    <ul class="nav d-none d-lg-flex">
+                        <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fonctionnalite.php">Fonctionnalités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="connexion.php">Connexion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nouveaucompte.php">Créer un compte</a></li>
+                    </ul>
+
+                    <!-- Bouton burger uniquement en mobile -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Menu burger mobile -->
+                    <div class="collapse navbar-collapse d-lg-none" id="navbarMobile">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="fonctionnalite.php">Fonctionnalités</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="connexion.php">Connexion</a></li>
+                            <li class="nav-item"><a class="nav-link" href="nouveaucompte.php">Créer un compte</a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <div id="titre">
+    <div class="contenu-texte">
+      
+        <h1>Votre tableau de bord intuitif pour gérer vos projets avec simplicité .
+    </h1>
+        <p>Explorez une solution innovante pour collaborer efficacement et atteindre vos objectifs plus rapidement. </p>
+    </div>
+    <div id="font">
+        <img src="images/font-header.png" alt="Illustration">
+    </div>
+</div>
+
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <div class="p-5" id="presentation">
+                <h2>Organisez vos projets IT en toute simplicité</h2>
+                <p>Céleste IT est une application moderne qui simplifie la gestion des projets IT pour les développeurs,les freelances, et les équipes.</p>
+                <p>Profitez d'un tableau de bord intuitif et de fonctionnalités robustes pour mieux collaborer</p>
+            </div>
+        </section>
+
+
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 text-primary">Un ensemble d'outils complets pour vos projets IT</h2>
+
+                <div class="row row-cols-1 row-cols-md-2 g-4 align-items-stretch">
+                    <div class="col d-flex">
+                        <div class="p-5 bg-white shadow-sm rounded flex-fill">
+                            <h4 class="text-dark"><i class="bi bi-layout-text-window-reverse me-2"
+                                    style="color: #007bff; font-size: 2rem;"></i> Tableau de Bord
+                            </h4>
+                            <p class="mb-0">Présentez vos projets en un clin d'œil avec un tableau organisé.</p>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex">
+                        <div class="p-5 bg-white shadow-sm rounded flex-fill">
+                            <h4 class="text-dark"><i class="bi bi-kanban me-2"
+                                    style="color: #28a745; font-size: 2rem;"></i> Listes de Tâches (Kanban)</h4>
+                            <p class="mb-0">Suivez vos tâches avec les colonnes "À faire", "En cours", "Terminé".</p>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex">
+                        <div class="p-5 bg-white shadow-sm rounded flex-fill">
+                            <h4 class="text-dark"><i class="bi bi-card-checklist me-2"
+                                    style="color: #6c63ff; font-size:2rem;"></i> Cartes/Tâches</h4>
+                            <p class="mb-0">Créez des cartes personnalisées avec des descriptions détaillées, des
+                                commentaires et des assignations d'équipe.</p>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex">
+                        <div class="p-5 bg-white shadow-sm rounded flex-fill">
+                            <h4 class="text-dark"><i class="bi bi-arrows-move me-2"
+                                    style="color: #ff3103; font-size: 2rem;"></i> Drag and Drop</h4>
+                            <p class="mb-0">Glissez-déposez facilement vos cartes entre les colonnes.</p>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex">
+                        <div class="p-5 bg-white shadow-sm rounded flex-fill">
+                            <h4 class="text-dark"><i class="bi bi-search me-2"
+                                    style="color: #00b4d8; font-size: 2rem;"></i> Recherche</h4>
+                            <p class="mb-0">Retrouvez rapidement une tâche ou un projet grâce à une barre de recherche
+                                performante.</p>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex">
+                        <div class="p-5 bg-white shadow-sm rounded flex-fill">
+                            <!-- flex fill pour que l'élement enfant prend toute la place disponible -->
+                            <h4 class="text-dark"> <i class="bi bi-bell me-2"
+                                    style="color: #e01cc3; font-size: 2rem;"></i> Notifications</h4>
+
+                            <p class="mb-0">Soyez alerté en temps réel des mises à jour sur vos projets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 text-primary">Pourquoi choisir Céleste-IT ?</h2>
+
+                <div class="row g-4">
+                    <!-- Personnalisation de l'expérience utilisateur -->
+                    <div class="col-md-6">
+                        <div class="p-4 bg-white shadow-lg rounded " id="vad">
+                            <h3 class="text-dark"><i class="bi bi-palette me-2"></i>Personnalisation de l'expérience
+                                utilisateur</h3>
+                            <p>Adaptez l'application à vos besoins avec des étiquettes, des couleurs et des préférences
+                                spécifiques pour une gestion optimale de vos projets.</p>
+                        </div>
+                    </div>
+
+                    <!-- Collaboration et permissions -->
+                    <div class="col-md-6">
+                        <div class="p-4 bg-white shadow-lg rounded" id="vad">
+                            <h3 class="text-dark"><i class="bi bi-person-check me-2"></i>Collaboration et permissions
+                            </h3>
+                            <p>Travaillez en équipe en assignant des tâches et en gérant les rôles et permissions pour
+                                une collaboration fluide et sécurisée.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="mb-4 text-primary">Démarrez votre expérience</h2>
+                <div class="lead mb-4">
+                    <p>Rejoignez dès aujourd'hui notre plateforme et simplifiez la gestion de vos projets IT avec
+                        Céleste IT. </p>
+                    <span> Offrant un contrôle de vos projets de manière intuitive et collaborative.</span>
+                </div>
+                <a href="/nouveaucompte.php" class="btn btn-lg shadow-lg">Commencer</a>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <ul>
+            <li>
+                Confidentialité
+            </li>
+            <li>Conditions légales</li>
+            <li>CGV</li>
+            <li>Contact</li>
+        </ul>
+        <p id="copy"> © 2025 Celeste-It - Tous droits résevés</p>
+
+    </footer>
+</body>
+
+</html>

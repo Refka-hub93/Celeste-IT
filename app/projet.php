@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/scripts.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/projet.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="logonav">
+            <a href="index.html"><img src="./images/logo final.png" alt="logo celest-it"></a>
+         <!-- Liste classique visible en écran large -->
+         <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                    <ul class="nav d-none d-lg-flex">
+                        <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fonctionnalite.php">Fonctionnalités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="connexion.php">Connexion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nouveaucompte.php">Créer un compte</a></li>
+                    </ul>
+
+                    <!-- Bouton burger uniquement en mobile -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Menu burger mobile -->
+                    <div class="collapse navbar-collapse d-lg-none" id="navbarMobile">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="fonctionnalite.php">Fonctionnalités</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="connexion.php">Connexion</a></li>
+                            <li class="nav-item"><a class="nav-link" href="nouveaucompte.php">Créer un compte</a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="board" id="board">
+        <div class="text-center mb-4">
+            <button id="add-board-button" class="btn btn-primary">Créer un tableau</button>
+        </div>
+        <div id="boards-container"></div>
+    </main>
+
+    <!-- Template for Board -->
+    <template id="board-template">
+        <section class="board-section">
+            <h2>Tableau: <span class="board-title">Nouveau tableau</span></h2>
+            <button class="add-list-button btn btn-success">Ajouter une liste</button>
+            <div class="lists-container" id="lists-container"></div>
+        </section>
+    </template>
+
+    <!-- Template for List -->
+    <template id="list-template">
+        <section class="list">
+            <div class="list-header">
+                <input type="text" class="list-title form-control" placeholder="Titre de la liste">
+                <button class="add-card-button btn btn-secondary">Ajouter une carte</button>
+            </div>
+            <ul class="cards text-center"></ul>
+        </section>
+    </template>
+
+    <!-- Template for Card -->
+    <template id="card-template">
+        <li class="card">
+            <button type="button" class="card-title text-center btn btn-light">Nouvelle Carte</button>
+        </li>
+    </template>
+
+    <footer>
+        <ul>
+            <li>Confidentialité</li>
+            <li>Conditions légales</li>
+            <li>CGV</li>
+            <li>Contact</li>
+        </ul>
+        <p id="copy">© 2025 Celeste-It - Tous droits réservés</p>
+    </footer>
+
+</body>
+
+</html>
