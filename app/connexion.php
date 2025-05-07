@@ -31,41 +31,9 @@ session_start();
     <header>
 
         <div id="logonav">
-            <a href="index.html"><img src="./images/logo final.png" alt="logo celest-it"></a>
+            <a href="index.php"><img src="./images/logo final.png" alt="logo celest-it"></a>
 
-            <!-- Liste classique visible en écran large -->
-            <nav class="navbar navbar-light">
-                <div class="container-fluid">
-                    <ul class="nav d-none d-lg-flex">
-                        <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="fonctionnalite.php">Fonctionnalités</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="connexion.php">Connexion</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nouveaucompte.php">Créer un compte</a></li>
-                    </ul>
-
-                    <!-- Bouton burger uniquement en mobile -->
-                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <!-- Menu burger mobile -->
-                    <div class="collapse navbar-collapse d-lg-none" id="navbarMobile">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
-                            <li class="nav-item"><a class="nav-link" href="fonctionnalite.php">Fonctionnalités</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="connexion.php">Connexion</a></li>
-                            <li class="nav-item"><a class="nav-link" href="nouveaucompte.php">Créer un compte</a></li>
-                        </ul>
-
-
-                    </div>
-                </div>
-            </nav>
-
+            <?php require_once 'includes/nav.php'; ?>
         </div>
 
     </header>
@@ -109,18 +77,18 @@ session_start();
 
 
         <!-- Section Accroche -->
-        <section id="secondaire">
+        <section id="secondaire" class="text-center pb-5">
             <div>
                 <h2>🚀 Rejoignez la communauté Céleste IT</h2>
                 <p>Accédez à votre espace personnel et gérez vos projets en toute simplicité.</p>
-                <ul>
+                <ul >
                     <li>✔ Suivi en temps réel de vos tâches</li>
                     <li>✔ Collaboration fluide avec votre équipe</li>
                     <li>✔ Notifications et rappels intelligents</li>
                 </ul>
                 <p>Pas encore de compte ? </p>
                 
-                <a href="/nouveaucompte.php"> <p>Créez-en un maintenant</a> et boostez votre
+                <a href="nouveaucompte.php"> <p>Créez-en un maintenant</a> et boostez votre
                     productivité !</p>
             </div>
         </section>
