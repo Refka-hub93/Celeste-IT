@@ -6,8 +6,6 @@
     --thirdcolor: #3a15f4;
     --titlecolor: rgb(87, 85, 85);
     --font-color: rgb(9, 156, 241);
-
-
     font-size: 16px;
 
 }
@@ -25,8 +23,11 @@ body {
 
 }
 
+
+/* Début header */
+
 .hero {
-    height: 120vh;
+    height: 100vh;
 }
 
 header {
@@ -36,8 +37,7 @@ header {
 
 
     /* Occupe toute la hauteur de l'écran */
-    .navbar-light .navbar-toggler-icon {
-        filter: brightness(0) invert(1);
+    .navbar-light .navbar-toggler-icon { filter: brightness(0) invert(1);
     }
 
     .navbar-light .navbar-toggler {
@@ -79,10 +79,10 @@ header {
 
 
     #titre {
-        display: block;
+        /* display: block;
         align-items: start;
         width: 50%;
-        height: 500px;
+        
         gap: 5px;
 
 
@@ -104,31 +104,42 @@ header {
             color: white;
 
             
-        }
+        } */
+        height: 100vh;
+/* display: grid;
+grid-template-columns: 1fr 1fr; */
 
+background: url("../images/font-header.png");
+background-size: 100%; /* Ajuste l'image pour couvrir tout l'écran */
+max-width: 100%;
+
+background-repeat: no-repeat; /* Empêche la répétition */
+overflow:auto; 
        
     }
 
     .contenu-texte {
-        position: relative;
-        top: 30%;
-        left: 0;
+        /* position: relative;*/
+        /* top: 30%; */
+       /* left: 0; */
     }
 }
 
 /* Styles pour le fond (font-header image) */
 #font {
-    position: absolute;
+    /* position: absolute;
     top: 60px;
-    /* Place l'image juste en dessous de la nav */
+     
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
     width: 120%;
-    /* Agrandit la largeur de l'image */
+     
     max-height: 100%;
-    /* L'image occupe plus d'espace vertical */
-    overflow: hidden;
+    
+    overflow: hidden; */
+
+
 }
 
 #font img {
@@ -136,20 +147,16 @@ header {
     height: auto;
     object-fit: cover;
     opacity: 0.8;
-    /* Ajustez l'opacité si nécessaire */
+   
 }
+
+
+/* Fin header */
 
 main {
     padding-top: 0;
     margin-top: 0;
-}
-
-
-
-main {
-
     margin: 10px;
-
 }
 
 #presentation {

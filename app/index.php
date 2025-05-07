@@ -33,9 +33,9 @@
                 </h1>
                 <p>Explorez une solution innovante pour collaborer efficacement et atteindre vos objectifs plus rapidement. </p>
             </div>
-            <div id="font">
+            <!-- <div id="font">
                 <img src="images/font-header.png" alt="Illustration">
-            </div>
+            </div> -->
         </div>
 
 

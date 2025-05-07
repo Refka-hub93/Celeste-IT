@@ -639,7 +639,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Fonction pour restaurer le board depuis les données sauvegardées
+// Fonction pour restaurer le tableau depuis les données sauvegardées
 function restoreBoard() {
     if (!listsData || listsData.length === 0) {
         addList();
